@@ -1,0 +1,31 @@
+USE Ferreteria;
+
+CREATE TABLE Inventario (
+    Id_num INTEGER IDENTITY(1, 1),
+    Descripcion VARCHAR(255) NOT NULL,
+    Inventario_Minimo Int,
+    Proveedor VARCHAR(255) NOT NULL,
+    PRIMARY KEY (Id_num)
+);
+
+
+INSERT INTO Inventario VALUES ('Foco 60W', 10, 'Servi_Luz');
+INSERT INTO Inventario VALUES ('Pinzas de Corte', 15, 'Truper');
+INSERT INTO Inventario VALUES ('Laca Transparente', 7, 'Sayer');
+INSERT INTO Inventario VALUES ('Taquetes de Expansion', 100, 'Fischer');
+INSERT INTO Inventario VALUES ('Taladro', 5, 'Black & Decker');
+
+
+
+CREATE TABLE Proveedores(
+    Proveedor VARCHAR(255) NOT NULL,
+    Telefono VARCHAR(10),
+    Tiempo_de_Entrega Int,
+    PRIMARY KEY (Proveedor)
+);
+
+INSERT INTO Proveedores VALUES ('Decker', 3310203457, 10);
+INSERT INTO Proveedores VALUES('Fischer',3304283472, 7);
+INSERT INTO Proveedores VALUES('Sayer',3312364578, 3);
+INSERT INTO Proveedores VALUES('Servi_Luz',3335769553, 5);
+INSERT INTO Proveedores VALUES('Truper',3323458719, 7);

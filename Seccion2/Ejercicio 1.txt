@@ -1,0 +1,13 @@
+Preguntas de esta tarea
+Utilizando los comandos CREATE DATABASE, CREATE TABLE e INSERT INTO, 
+crea una base de datos llamada "Ferretería" que contenga dos tablas, una llamada "Inventario" y otra llamada "Proveedores".
+
+Cada tabla debe contener al menos con cinco filas
+
+Para la tabla "Inventario" crea un campo cuyos valores comiencen en 1 y vayan incrementando de uno en uno automáticamente 
+y utiliza este campo como llave primaria. Agrega además los campos "Descripción", "Inventario_Minimo" y "Proveedor"
+
+La tabla "Proveedores" deberá contener los campos "Proveedor" 
+(el cual contendrá la misma información que el campo "Proveedor" de la tabla "Inventario"), 
+"Teléfono" y "Tiempo_de_Entrega", que será la cantidad de días hábiles que el proveedor tarda en entregar el material 
+a la Ferretería
